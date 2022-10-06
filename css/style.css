@@ -53,6 +53,10 @@ a:hover{
     color: white;
 }
 
+a:hover .fa-solid{
+    color: white;
+}
+
 
 .spotify{
     color: white;
@@ -103,6 +107,7 @@ a:hover{
     font-size:15px;
 }
 
+
 .riga .fa-solid{
     color: rgb(136, 136, 136);
 }
@@ -149,8 +154,7 @@ a:hover{
     align-items: center;
     top: 0;
     right: 0;
-    background-color: black;
-    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.7);
     height: 60px;
     width: calc(100vw - 200px);
 }
@@ -187,7 +191,6 @@ a:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50px;
 }
 
 .menu-main ul, .menu-main li{
@@ -197,6 +200,10 @@ a:hover{
     display: flex;
     column-gap: 25px;
     font-size: 13px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: flex-start;
 }
 
 .menu-main li{
@@ -218,11 +225,11 @@ a:hover{
 .title{
     display: flex;
     align-items: center;
-    width: 100%;
-    height: 50px;
     color: white;
     font-size: 35px;
     padding-left: 20px;
+    margin-top: 25px;
+    padding-bottom: 10px;
 
 }
 
@@ -230,40 +237,47 @@ a:hover{
     font-size: 15px;
     color: rgb(136, 136, 136);
     padding-left: 20px;
+    padding-bottom: 10px;
 }
 
 .container-album1{
-    /* background-color: blueviolet; */
-    height: 100%;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 20px;
     padding-left: 20px;
-    padding-bottom: 130px;
-    gap: 20px;   
+    gap: 20px;  
+    align-items: flex-start; 
+    padding-bottom: 30px;
 }
 
-.container-album2{
-    /* background-color: blueviolet; */
+.container-album2, .container-album3{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     padding-top: 20px;
     padding-left: 20px;
-    padding-bottom: 130px;
     gap: 10px;   
+    padding-bottom: 30px;
+}
+
+.container-album3 .album{
+    display: inline-block;
+    position: relative;
+    flex-shrink: 0;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 
 
 .album{
     width: 250px;
-    max-height: 250px;
-    background-color: greenyellow;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
 }
 
 img{
@@ -276,11 +290,13 @@ img{
     text-align: center;
     color: white;
     padding: 10px;
+    font-size: 13px;
 }
 
 .subtitle-album{
     text-align: center;
     color: rgb(136, 136, 136);
+    font-size: 13px;
 }
 
 .container-footer{
@@ -396,31 +412,51 @@ img{
     color: white;
 }
 
-@media screen and (max-width:1439px) {
-    
-}
 
-@media screen and (max-width:1200px){
+
+@media screen and (max-width:1080px){
     .container-album1{
         flex-wrap: wrap;
         justify-content: flex-start
     }
-
     .album{
-        max-width: 170px;
-        max-height: 170px;
+        width: calc(100% / 4 - 60px /4);
+        
+    }
+
+    .container-album3 .album{
+        width: calc(100% / 4 - 60px /4);
+        border-radius: 0px;
+        height: 0px;
     }
 }
 
 @media screen and (max-width:876px){
-    /* .album{
-        width: 100px;
-        height: 100px;
-    } */
+   
     .menu-main{
         flex-wrap: wrap;
     }
 }
+
+@media screen and (max-width:730px){
+   
+    .container-album1{
+        flex-wrap: wrap;
+        justify-content: flex-start
+    }
+    .album{
+        width: calc(100% / 2 - 40px /2);    
+    }
+
+    .container-album3 .album{
+        width: calc(100% / 2 - 40px /2);
+        border-radius: 0px;
+        height: 0px;
+    }
+}
+
+
+
 
 @media screen and (max-width:552px){
     .container-aside{
