@@ -8,6 +8,7 @@
     <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Spotify</title>
+    <link rel="stylesheet" href="">
 </head>
 <body>
     
@@ -21,10 +22,8 @@
                 <ul>
                     <li>
                         <div class="riga">
-                            <a href="">
-                                <i class="fa-solid fa-house"></i>
-                                <span>Home</span>
-                            </a>     
+                               <a href=""><i class="fa-solid fa-house"></i></a>
+                                <a href=""><span>Home</span></a>                               
                         </div>        
                     </li>
 
@@ -54,7 +53,6 @@
                     <i class="fa-solid fa-square-plus"></i>
                     <span>Crea Playlist</span> 
                 </div> 
-
                 <ul>                
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
@@ -67,10 +65,29 @@
                 </ul>
             </div>
 
+            <div class="footer-aside">
+                <div class="riga">
+                    <a href="">
+                        <i class="fa-regular fa-circle-down"></i>
+                        <span>Istalla app</span>
+                    </a>     
+                </div> 
+                <hr>
+                <div class="riga">
+                    
+                        <a href=""><i class="fa-solid fa-user"></i></a>
+                        <a href=""><div class="john">John Doe</div> </a>
+                        
+                </div> 
+            </div>
+
         </div>
     </aside>
     <header>
         <div class="container-navbar">
+           <div class="container-upgrade">
+                EFFETTUA L'UPGRADE
+           </div> 
         </div>
     </header>
 
@@ -78,7 +95,14 @@
         <div class="container-main">
             <div class="menu-main">
                 <ul>
-                    <li>IN EVIDENZA</li>
+                    <li>
+                        <div class="evidenza">
+                            IN EVIDENZA
+                        </div> 
+                        <div class="riga-evidenza">
+                            
+                        </div>                       
+                    </li>
                     <li>PODCAST</li>
                     <li>CLASSIFICHE</li>
                     <li>GENERI E MOOD</li>
@@ -163,7 +187,50 @@
 
     <footer>
         <div class="container-footer">
-            
+            <div class="box-container-footer1">
+                <div class="container-album-play">
+                    <img src="img/sinister.jpeg" alt="">                                   
+                </div>
+                <div>
+                    <div class="namesong-play">Sinister</div>
+                    <div class="nameartist-play">Brano Nome</div>
+                </div> 
+                <div class="name-play">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+               
+            </div>
+
+            <div class="box-container-footer2">
+                <div class="container-icon-play">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+
+                <div class="container-soundbar">
+                    <div class="tempo">0:25</div>
+                    <div class="barra-play">
+                        <div class="barraplay2"></div>
+                    </div>
+                    <div class="tempo">0:25</div>
+                </div>
+            </div>
+
+            <div class="box-container-footer3">
+                <div class="container-icone-audio">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="barra-play">
+                        <div class="barraplay2"></div>
+                    </div>  
+                </div>
+            </div>
+
         </div>
     </footer>
 </body>
