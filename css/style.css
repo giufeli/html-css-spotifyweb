@@ -5,10 +5,8 @@
 }
 
 body{
-    
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 .riga span{
@@ -285,9 +283,9 @@ a:hover .fa-solid{
     position: relative;
     flex-shrink: 0;
     width: 250px;
-    height: 250px;
     overflow: hidden;
     border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 
 .album{
@@ -496,7 +494,10 @@ img{
     }
     .album{
         width: calc(100% / 4 - 60px /4);
-        
+    }
+
+    .container-album3 .album{
+        width: calc(100% / 4 - 60px /4);
     }
 }
 
@@ -515,6 +516,9 @@ img{
     }
     .album{
         width: calc(100% / 2 - 40px /2);    
+    }
+    .container-album3 .album{
+        width: calc(100% / 2 - 40px /2);  
     }
 
     .box-container-footer1{
